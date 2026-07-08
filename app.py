@@ -20,7 +20,7 @@ if hist_button:
         title='Distribuição da quilometragem dos veículos'
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
 # Botão para gráfico de dispersão
 scatter_button = st.button('Criar gráfico de dispersão')
@@ -35,4 +35,4 @@ if scatter_button:
         title='Relação entre quilometragem e preço'
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
