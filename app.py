@@ -8,11 +8,11 @@ car_data = pd.read_csv('vehicles_us.csv')
 # Cabeçalho
 st.header('Análise de Anúncios de Venda de Veículos')
 
-# Botão para histograma
-hist_button = st.button('Criar histograma')
+# Histograma
+build_histogram = st.checkbox('Mostrar histograma da quilometragem')
 
-if hist_button:
-    st.write('Criando histograma da quilometragem dos veículos')
+if build_histogram:
+    st.write('Distribuição da quilometragem dos veículos')
 
     fig = px.histogram(
         car_data,
@@ -22,11 +22,13 @@ if hist_button:
 
     st.plotly_chart(fig, width='stretch')
 
-# Botão para gráfico de dispersão
-scatter_button = st.button('Criar gráfico de dispersão')
+# Gráfico de dispersão
+build_scatter = st.checkbox(
+    'Mostrar gráfico de dispersão (quilometragem vs preço)'
+)
 
-if scatter_button:
-    st.write('Criando gráfico de dispersão entre quilometragem e preço')
+if build_scatter:
+    st.write('Relação entre quilometragem e preço')
 
     fig = px.scatter(
         car_data,
