@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-# Ler os dados
+# Ler os dados CSV
 car_data = pd.read_csv('vehicles_us.csv')
 
 # Cabeçalho
