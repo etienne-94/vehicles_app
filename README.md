@@ -8,13 +8,17 @@ Aplicação web interativa desenvolvida com Streamlit para análise exploratóri
 - Visualização de gráfico de dispersão entre quilometragem e preço.
 - Interface interativa com caixas de seleção (checkboxes).
 - Gráficos interativos criados com Plotly Express.
+- Implementação e disponibilização online através do Render.
 
 ## Tecnologias Utilizadas
 
 - Python
-- Pandas
-- Plotly
-- Streamlit
+- Pandas (análise e manipulação de dados)
+- Plotly Express (gráficos interativos)
+- Streamlit (interface web)
+- Git (controlo de versões)
+- GitHub (armazenamento e partilha do código)
+- Render (hospedagem da aplicação)
 
 ## Estrutura do Projeto
 
@@ -54,6 +58,10 @@ streamlit run app.py
 Disponível em:
 
 https://vehicles-app-epdt.onrender.com
+
+## Repositório GitHub
+
+https://github.com/etienne-94/vehicles_app
 
 ## Autor
 
